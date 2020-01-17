@@ -1,1 +1,28 @@
-<p>list-modules-front works!</p>
+<h1> liste des modules</h1>
+
+<div style="width: 700px; margin-left: 150px">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col"> Nom </th>
+      <th scope="col"> Intervenant </th>
+      <th scope="col"> Session </th>
+      <th scope="col"> Date de Debut </th>
+      <th scope="col"> Date de Febut </th>
+      <th scope="col"> Vote </th>
+
+    </tr>
+    </thead>
+    <tbody *ngFor="let module of modules; index as i;">
+    <tr class="table-active">
+      <th scope="row">Active</th>
+      <td>{{module.nom}}</td>
+      <td>{{module.intervenant_id}}</td>
+      <td>{{module.session_id}}</td>
+      <td>{{module.date_debut}}</td>
+      <td>{{module.date_fin}}</td>
+      <td><button type="button" class="btn btn-primary"> voter</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
