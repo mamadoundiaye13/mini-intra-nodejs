@@ -6,7 +6,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserService } from './common/user/user.service';
-import { ListUsersComponent } from './list-users/list-users.component';
+import { ListUsersComponent } from './view/content/admin/list-users/list-users.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ApiService} from './common/api/api.service';

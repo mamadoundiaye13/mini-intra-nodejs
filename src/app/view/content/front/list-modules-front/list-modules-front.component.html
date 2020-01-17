@@ -1,94 +1,27 @@
+
 <div style="width: 700px; margin-left: 150px">
   <table class="table table-hover">
-  <thead>
-  <tr>
-    <th scope="col"> Name</th>
-    <th scope="col"> Date de Debut</th>
-    <th scope="col"> Date de Fin </th>
-    <th scope="col"> Noter le module </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr class="table-active">
-    <th scope="row">Active</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td >
-      <button type="button" class="btn btn-primary" > Voter</button>
-    </td>
-  </tr>
-  <tr>
-    <th scope="row">Default</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> voter</button>
-    </td>
-  </tr>
-  <tr class="table-primary">
-    <th scope="row">Primary</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary">Voter</button>
-    </td>
-  </tr>
-  <tr class="table-secondary">
-    <th scope="row">Secondary</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  <tr class="table-success">
-    <th scope="row">Success</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary">Voter</button>
-    </td>
-  </tr>
-  <tr class="table-danger">
-    <th scope="row">Danger</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  <tr class="table-warning">
-    <th scope="row">Warning</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  <tr class="table-info">
-    <th scope="row">Info</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  <tr class="table-light">
-    <th scope="row">Light</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  <tr class="table-dark">
-    <th scope="row">Dark</th>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>
-      <button type="button" class="btn btn-primary"> Voter</button>
-    </td>
-  </tr>
-  </tbody>
+    <thead>
+    <tr>
+      <th scope="col"> Nom </th>
+      <th scope="col"> Intervenant </th>
+      <th scope="col"> Session </th>
+      <th scope="col"> Date de Debut </th>
+      <th scope="col"> Date de Febut </th>
+      <th scope="col"> Vote </th>
+
+    </tr>
+    </thead>
+    <tbody *ngFor="let module of modules; index as i;">
+    <tr class="table-active">
+      <th scope="row">Active</th>
+      <td>{{module.nom}}</td>
+      <td>{{module.intervenant_id}}</td>
+      <td>{{module.session_id}}</td>
+      <td>{{module.date_debut}}</td>
+      <td>{{module.date_fin}}</td>
+      <td><button type="button" class="btn btn-primary"> voter</button></td>
+    </tr>
+    </tbody>
   </table>
 </div>
