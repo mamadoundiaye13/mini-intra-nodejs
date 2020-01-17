@@ -1,0 +1,9 @@
+ node_modules/
+ .editorconfig
+ .dockerignore
+ .gitignore
+ .git
+ README.md
+ LICENSE
+ .vscode
+

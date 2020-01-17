@@ -1,0 +1,72 @@
+element.style {
+    min-height: 667px;
+}
+<style>
+#corps {
+    /* top: 20px; */
+    /* height: 100%; */
+    width: 100%;
+    /* position: relative; */
+}
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+<style>
+* {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: antialiased;
+}
+<style>
+* {
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: antialiased;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+<style>
+#page {
+    width: 980px;
+    margin: 0 auto;
+    /* position: relative; */
+    text-align: left;
+}
+<style>
+#pageback {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+<style>
+body {
+    margin: 0 auto;
+    font-family: "arial", verdana, "sans-serif";
+    text-align: center;
+    /* background: white url(http://extranet.ecole-ipssi.com/styles/../images/design/background.jpg) repeat-x; */
+    font-size: 1.1em;
+}
+<style>
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}

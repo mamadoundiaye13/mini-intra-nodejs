@@ -1,0 +1,42 @@
+<div id="footer">
+    <p style="display:block;clear:both;margin:25px 0 !important; color:#FFFFFF;text-align: center">© 1998-2018 groupe ip-formation | PARIS : 01 55 43 26 65 | Tous droits réservés | <a href="contact.php" style="color:#FFFFFF">Contactez-nous</a> | <!-- <a href="plan_site.php">Plan du site</a> | --> <a href="informations_legales.php" style="color:#FFFFFF">Informations légales</a>
+    </p>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $('#logintranet').on("click", function(){
+            $('#formlogin').fadeToggle('fast');
+        });
+        $('#formlogin').on('click', function(event){
+            if(event.target === this){
+                $('#formlogin').fadeToggle();
+            }
+        });
+        $('#annuler').click(function() {
+            $('#formlogin').fadeToggle();
+        });
+    });
+</script>
+
+<!-- Menu superfish-->
+<script src="scripts/menu/superfish.js"></script>
+
+<!-- Nouveau Google Analytics ipssi 12 mai 2015 -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-62893928-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
