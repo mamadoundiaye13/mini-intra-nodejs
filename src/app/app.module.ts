@@ -1,59 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserService } from './common/user/user.service';
-import { ListUsersComponent } from './list-users/list-users.component';
-import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import {ApiService} from './common/api/api.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListNotesModulesComponent } from './view/content/admin/';
-import { ListSessionsComponent } from './view/content/admin/';
-import { ListModulesComponent } from './view/content/admin';
+import { HelloComponent } from './hello.component';
+import { SiteLayoutComponent } from './site-layout/site-layout.component';
+import { SiteHeaderComponent } from './_layout/site-header/site-header.component';
+import { SiteFooterComponent } from './_layout/site-footer/site-footer.component';
+import { LoginComponent } from './login/login.component';
 
-
-import { FromNotesComponent } from './view/content/front';
-import { ListModulesFrontComponent } from './view/content/front';
-
-import { LoginComponent } from './view/login/login.component';
-
-import { SiteLayoutComponent } from './layout/site-layout/';
-import { HeaderComponent } from './layout/header';
-import { FooterComponent } from './layout/footer';
+import { routing } from './app.routing';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ListUsersComponent,
-    SiteLayoutComponent,
-    FooterComponent,
-    HeaderComponent,
-    AppComponent,
-    ListNotesModulesComponent,
-    ListSessionsComponent,
-    ListModulesComponent,
-    ListSessionsComponent,
-    FromNotesComponent,
-    LoginComponent,
-    ListModulesFrontComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [
-    UserService,
-    ApiService
-  ],
-  bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  imports:      [ BrowserModule, FormsModule, routing ],
+  declarations: [ AppComponent, HelloComponent, SiteLayoutComponent, , SiteHeaderComponent, SiteFooterComponent, LoginComponent ],
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

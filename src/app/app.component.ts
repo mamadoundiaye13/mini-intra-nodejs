@@ -1,37 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {UserService} from './common/user/user.service';
-import {Observable} from 'rxjs';
-import {UserEntity} from './common/user/user.entity';
-import {ApiService} from './common/api/api.service';
-import {error} from 'util';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: [ './app.component.css' ]
 })
-export class AppComponent implements OnInit {
-
-  users;
-  isAuth = false;
-
-  constructor(private apiService: ApiService) {
-    setTimeout(
-      () => {
-        this.isAuth = true;
-      }, 4000
-    );
-  }
-
-  onAllumer() {
-    console.log('on allume tout');
-  }
-  ngOnInit() {
-    this.apiService.get('http://127.0.0.1:3000/users').subscribe(
-      data => {this.users = data; },
-    // tslint:disable-next-line:no-shadowed-variable no-unused-expression
-    error => console.log('error:', error)
-    );
-  }
-
+export class AppComponent  {
+  name = 'Angular 8.3.22';
 }
