@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     this.apiService.get('http://127.0.0.1:3000/users').subscribe(
       data => {this.users = data; },
     // tslint:disable-next-line:no-shadowed-variable no-unused-expression
-    error => console.log(error)
+    error => console.log('error:', error)
     );
   }
 

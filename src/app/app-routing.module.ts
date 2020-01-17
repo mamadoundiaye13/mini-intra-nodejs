@@ -5,7 +5,6 @@ import { ListModulesComponent, ListSessionsComponent, ListNotesModulesComponent 
 
 import { ListModulesFrontComponent, FromNotesComponent } from './view/content/front/';
 
-import { HomeComponent } from './view/home';
 import { AuthGuard } from './service/auth/auth.guard';
 import { LoginComponent } from './view/login/login.component';
 
@@ -33,11 +32,6 @@ const routes: Routes = [
         component: LoginComponent
       },
       {
-          path: 'home',
-          component: HomeComponent,
-          canActivate: [AuthGuard]
-        },
-        {
           path: 'list-sessions',
           canActivate: [AuthGuard],
           component: ListSessionsComponent
@@ -65,11 +59,6 @@ const routes: Routes = [
         }
 
       ]
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-    canActivate: [AuthGuard]
   },
   {
     path: 'list-sessions',
