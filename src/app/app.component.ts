@@ -12,10 +12,9 @@ import {error} from 'util';
 })
 export class AppComponent implements OnInit {
 
-  users;
   isAuth = false;
 
-  constructor(private apiService: ApiService) {
+  constructor() {
     setTimeout(
       () => {
         this.isAuth = true;
@@ -27,11 +26,6 @@ export class AppComponent implements OnInit {
     console.log('on allume tout');
   }
   ngOnInit() {
-    this.apiService.get('http://127.0.0.1:3000/users').subscribe(
-      data => {this.users = data; },
-    // tslint:disable-next-line:no-shadowed-variable no-unused-expression
-    error => console.log('error:', error)
-    );
   }
 
 }
